@@ -382,7 +382,7 @@ export default function AstrophysicsEngine() {
       
       <div className="hud-panel">
         <div style={{ textAlign: 'center', marginBottom: '0.2rem' }}>
-          <h2 style={{ margin: 0, fontSize: '1rem', color: '#ffaa00', textTransform: 'uppercase', letterSpacing: '2px' }}>Astrophysics Lab</h2>
+          <h2 style={{ margin: 0, fontSize: '1rem', color: '#ffaa00', textTransform: 'uppercase', letterSpacing: '2px' }}>Andy Space Lab</h2>
           <p style={{ margin: 0, fontSize: '0.65rem', color: '#888' }}>
              {mode === 'STAR' ? "Tap to place gravitational bodies." : mode === 'PLANET' ? "Drag backwards to slingshot a planet." : mode === 'CAMERA' ? "Drag to pan the universe." : "Tap to detonate a kinetic shockwave."}
           </p>
@@ -429,23 +429,23 @@ export default function AstrophysicsEngine() {
 
       <div className={`modal-overlay ${showDocs ? 'active' : ''}`} onClick={() => setShowDocs(false)}>
         <div className="modal-content" onClick={e => e.stopPropagation()}>
-          <h2>The Astrophysics Sandbox</h2>
+          <h2>Andy's Space Lab</h2>
           
           <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255, 170, 0, 0.1)', borderLeft: '3px solid #ffaa00' }}>
             <p style={{ fontStyle: 'italic', margin: 0, color: '#fde68a' }}>
-              "I was always fascinated with planets. I actually would've worked for NASA, but they didn't serve me good coffee... so I left and burned their offer." 
-              <br/><br/><span style={{ fontSize: '0.7rem', opacity: 0.7 }}>— Andy (Just kidding, of course.)</span>
+              I was always fascinated with planets. I actually would've worked for NASA, but they didn't serve me good coffee so I left and burned their offer.
+              <br/><br/><span style={{ fontSize: '0.7rem', opacity: 0.7 }}>— I'm not joking btw</span>
             </p>
           </div>
 
           <p>
-            Welcome to the lab! Every single line you see is generated in real-time by true 3D gravitational mathematics. Here is how your tools behave in real life and in the simulation:
+            Welcome to the my space lab like in SpaceX! Every single line you see is generated in real-time by true 3D gravitational mathematics. Here is how your tools behave in real life and in the simulation:
           </p>
 
           <h3>1. The Stars & Anomalies</h3>
           <p>In real life, massive objects bend the very fabric of spacetime. Planets travel in straight lines through this curved space, which makes them orbit.</p>
           <ul>
-            <li style={{marginBottom: '0.5rem'}}><strong>Yellow Dwarfs & Blue Giants:</strong> These create deep, stable gravity wells. When a planet gets close, its velocity spikes, causing a "slingshot" effect. Because this engine simulates 3D depth, the orbits tilt naturally into geometric spirographs!</li>
+            <li style={{marginBottom: '0.5rem'}}><strong>Yellow Dwarfs & Blue Giants:</strong> These create deep, stable gravity wells. When a planet gets close, its velocity spikes, causing a "slingshot" effect. Because this engine simulates 3D depth, the orbits tilt naturally into geometric spirographs.</li>
             <li style={{marginBottom: '0.5rem'}}><strong>Neutron Stars:</strong> The collapsed cores of dead stars. They pack the mass of a giant star into a tiny radius, creating incredibly violent, tight orbits.</li>
             <li style={{marginBottom: '0.5rem'}}><strong>Black Holes:</strong> The gravity is so immense that they possess an <strong>Event Horizon</strong>. If your planet crosses that purple boundary, the required escape velocity exceeds the engine's limits, and it is permanently swallowed into the void.</li>
             <li style={{marginBottom: '0.5rem'}}><strong>Wormholes:</strong> A theoretical bridge through spacetime. Hit one of these, and your planet will be instantly teleported to a random location in the universe, keeping all of its momentum.</li>
@@ -454,7 +454,8 @@ export default function AstrophysicsEngine() {
           <h3>2. Supernovas (The Disruptor)</h3>
           <p>
             When a massive star dies, it explodes, ejecting its outer layers at a significant fraction of the speed of light. In this lab, tapping "Supernova" detonates a kinetic shockwave. If the red expanding ring intersects with your planets, the physical force will violently push them outward, destroying their stable orbits and scattering them into deep space.
-          </p>
+            This wasnt that easy to do so be easy on me. Im not a programmer, it lowkey sucks.
+                  </p>
 
           <br/>
           <h3 style={{borderTop: '1px solid #333', paddingTop: '1rem'}}>The 3D Engine Code</h3>
