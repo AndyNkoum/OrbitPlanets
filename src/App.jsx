@@ -433,13 +433,13 @@ export default function AstrophysicsEngine() {
           
           <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255, 170, 0, 0.1)', borderLeft: '3px solid #ffaa00' }}>
             <p style={{ fontStyle: 'italic', margin: 0, color: '#fde68a' }}>
-              I was always fascinated with planets. I actually would've worked for NASA, but they didn't serve me good coffee so I left and burned their offer.
+              I always liked planets. I actually would've worked for NASA, but my wife and kids said no. So I turned them down.
               <br/><br/><span style={{ fontSize: '0.7rem', opacity: 0.7 }}>— I'm not joking btw</span>
             </p>
           </div>
 
           <p>
-            Welcome to the my space lab like in SpaceX! Every single line you see is generated in real-time by true 3D gravitational mathematics. Here is how your tools behave in real life and in the simulation:
+            Welcome to the my space lab like in SpaceX Every single line you see is generated in real-time by true 3D gravitational big science stuff I saw online. Here is how your tools behave in real life and in the simulation:
           </p>
 
           <h3>1. The Stars & Anomalies</h3>
@@ -453,13 +453,13 @@ export default function AstrophysicsEngine() {
 
           <h3>2. Supernovas (The Disruptor)</h3>
           <p>
-            When a massive star dies, it explodes, ejecting its outer layers at a significant fraction of the speed of light. In this lab, tapping "Supernova" detonates a kinetic shockwave. If the red expanding ring intersects with your planets, the physical force will violently push them outward, destroying their stable orbits and scattering them into deep space.
-            This wasnt that easy to do so be easy on me. Im not a programmer, it lowkey sucks.
+            When a massive star dies, it explodes, ejecting its outer layers at a significant fraction of the speed of light. In this project, tapping "Supernova" detonates a kinetic shockwave. If the red expanding ring intersects with your planets, the physical force will violently push them outward, destroying their stable orbits and scattering them into deep space. This can happen in real life btw, and we all finna die.
+            This wasnt that easy to do so be easy on me. Im not a programmer, it lowkey sucks to be one; No offense.
                   </p>
 
           <br/>
           <h3 style={{borderTop: '1px solid #333', paddingTop: '1rem'}}>The 3D Engine Code</h3>
-          <p>For the curious, here is the raw 3D physics loop running the universe:</p>
+          <p>For those who are curious, here is the raw 3D physics loop I used:</p>
           <pre className="code-block">
 {`// Calculate 3D Gravity for every Star
 const distSq = dx*dx + dy*dy + dz*dz + Softening; 
