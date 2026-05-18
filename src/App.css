@@ -1,0 +1,92 @@
+/* App.css */
+:root {
+  --bg-void: #010103;
+  --panel-glass: rgba(5, 7, 12, 0.92);
+  --ui-border: rgba(255, 170, 0, 0.4);
+  --accent-star: #ffaa00;
+  --accent-planet: #00f0ff;
+  --accent-nova: #ff003c;
+  --accent-bh: #a855f7;
+}
+
+body, html {
+  margin: 0; padding: 0; width: 100%; height: 100dvh;
+  overflow: hidden; background-color: var(--bg-void);
+  font-family: 'JetBrains Mono', monospace;
+  touch-action: none; -webkit-user-select: none; user-select: none;
+  overscroll-behavior: none; 
+}
+
+.app-container { position: fixed; top: 0; left: 0; width: 100%; height: 100dvh; }
+
+.spirograph-canvas { 
+  display: block; width: 100%; height: 100%; 
+  touch-action: none; cursor: crosshair;
+}
+
+/* Physics HUD */
+.hud-panel {
+  position: absolute; bottom: env(safe-area-inset-bottom, 1rem); left: 50%;
+  transform: translateX(-50%); z-index: 10;
+  background: var(--panel-glass); backdrop-filter: blur(20px);
+  border: 1px solid var(--ui-border); padding: 1rem; border-radius: 1rem;
+  width: 96%; max-width: 700px; display: flex; flex-direction: column; gap: 0.8rem;
+  box-shadow: 0 0 50px rgba(255, 170, 0, 0.05);
+}
+
+.controls-grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+  gap: 0.8rem; align-items: end; 
+}
+
+.control-item { display: flex; flex-direction: column; gap: 0.3rem; }
+.control-item label { font-size: 0.55rem; color: #888; text-transform: uppercase; letter-spacing: 1px; }
+
+select.astro-select {
+  background: #000; border: 1px solid var(--ui-border); color: #fff;
+  padding: 0.5rem; border-radius: 0.4rem; font-family: inherit; font-size: 0.65rem;
+  text-transform: uppercase; outline: none; cursor: pointer;
+}
+
+.btn-group { display: flex; gap: 0.5rem; width: 100%; flex-wrap: wrap; }
+.btn {
+  flex: 1; min-width: 100px; background: #000; border: 1px solid var(--ui-border);
+  color: #fff; padding: 0.8rem 0.5rem; border-radius: 0.5rem;
+  font-size: 0.65rem; font-weight: bold; text-transform: uppercase; cursor: pointer;
+  transition: all 0.2s ease; touch-action: manipulation; text-align: center;
+}
+
+.btn:active { transform: scale(0.95); }
+.btn-star { background: rgba(255, 170, 0, 0.15); border-color: var(--accent-star); color: var(--accent-star); }
+.btn-planet { background: rgba(0, 240, 255, 0.15); border-color: var(--accent-planet); color: var(--accent-planet); }
+.btn-nova { background: rgba(255, 0, 60, 0.15); border-color: var(--accent-nova); color: var(--accent-nova); }
+.btn-danger { border-color: #555; color: #aaa; }
+
+input[type="range"] { -webkit-appearance: none; background: #222; height: 3px; border-radius: 5px; }
+input[type="range"]::-webkit-slider-thumb { 
+  -webkit-appearance: none; width: 16px; height: 16px; 
+  background: var(--accent-star); border-radius: 50%; cursor: pointer; 
+  box-shadow: 0 0 10px var(--accent-star);
+}
+
+/* Technical Modal */
+.modal-overlay {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100dvh;
+  background: rgba(0,0,0,0.95); z-index: 100; display: none;
+  padding: 1.5rem; overflow-y: auto;
+}
+.modal-overlay.active { display: block; }
+.modal-content { 
+  background: #010103; border: 1px solid var(--accent-star); 
+  padding: 2rem; border-radius: 0.5rem; color: #fff; 
+  max-width: 700px; margin: 0 auto;
+}
+.modal-content h2 { color: var(--accent-star); margin-top: 0; text-transform: uppercase; letter-spacing: 2px; border-bottom: 1px solid #333; padding-bottom: 0.5rem;}
+.modal-content h3 { color: var(--accent-planet); font-size: 1rem; margin-top: 1.5rem; }
+.modal-content p { font-size: 0.85rem; line-height: 1.7; color: #ccc; }
+
+pre.code-block {
+  background: #050508; padding: 1.25rem; font-size: 0.75rem;
+  overflow-x: auto; border-left: 3px solid var(--accent-star); color: #fde68a;
+}
