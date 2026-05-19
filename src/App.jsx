@@ -715,8 +715,8 @@ export default function AstrophysicsEngine() {
 
                     <div style={{ marginBottom: '1.5rem', padding: '1rem', background: 'rgba(255, 170, 0, 0.1)', borderLeft: '3px solid #ffaa00' }}>
                         <p style={{ fontStyle: 'italic', margin: 0, color: '#fde68a' }}>
-                            I always liked planets. I actually would've worked for NASA, but my wife and kids said no. So I turned them down.
-                            <br /><br /><span style={{ fontSize: '0.7rem', opacity: 0.7 }}>— I'm not joking btw</span>
+                            I always liked planets. I actually would've worked for NASA, but my wife and kids said no. So I turned them down innit.
+                            <br /><br /><span style={{ fontSize: '0.7rem', opacity: 0.7 }}> Now I'm unemployed</span>
                         </p>
                     </div>
 
@@ -725,24 +725,24 @@ export default function AstrophysicsEngine() {
                     <h3>1. Stars & Anomalies</h3>
                     <ul>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Yellow Dwarf & Blue Giant:</strong> Stable gravity wells. Close passes produce slingshot effects. 3D depth makes orbits tilt into spirograph patterns.</li>
-                        <li style={{ marginBottom: '0.5rem' }}><strong>White Dwarf:</strong> A dying star — lighter than a dwarf, ultra-small radius. Great for tight, chaotic orbits.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>White Dwarf:</strong> A dying star, lighter than a dwarf, ultra-small radius. Great for tight, chaotic orbits.</li>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Red Supergiant:</strong> Massive radius; planets crash into the surface easily.</li>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Neutron Star & Pulsar:</strong> Collapsed cores of dead stars. Pulsars emit rotating gamma beams that kick nearby planets sideways.</li>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Black Hole:</strong> Relativistic drag spirals planets into the event horizon. Cross the horizon and they vanish silently.</li>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Wormhole:</strong> Enter the horizon and your planet quantum-teleports to a random point, keeping its velocity.</li>
-                        <li style={{ marginBottom: '0.5rem' }}><strong>Dark Matter Halo:</strong> Completely invisible — no surface, no glow core — but exerts strong gravity. You can feel it without seeing it.</li>
-                        <li style={{ marginBottom: '0.5rem' }}><strong>Antimatter (Repulsive):</strong> Contains negative mass. Instead of pulling planets into orbit, it violently pushes them away!</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Dark Matter Halo:</strong> Completely invisible it has no surface, no glow core, but exerts strong gravity. You can feel it without seeing it.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Antimatter (Repulsive):</strong> Contains negative mass. Instead of pulling planets into orbit, it violently pushes them off-course</li>
                     </ul>
 
                     <h3>2. Launch Modes</h3>
                     <ul>
                         <li style={{ marginBottom: '0.5rem' }}><strong>Auto-Orbit:</strong> If you simply TAP in planet mode without dragging, the engine calculates the exact Kepler velocity needed and launches a perfectly stable circular orbit for you.</li>
                         <li style={{ marginBottom: '0.5rem' }}><strong>System:</strong> Tap anywhere to instantly spawn a Yellow Dwarf with a perfectly balanced, mathematically correct solar system of orbiting planets.</li>
-                        <li style={{ marginBottom: '0.5rem' }}><strong>Asteroid Belt:</strong> Taps spawn 12 asteroids in a ring with tangential velocity — instant mini solar system.</li>
+                        <li style={{ marginBottom: '0.5rem' }}><strong>Asteroid Belt:</strong> Taps spawn 12 asteroids in a ring with tangential velocity it makes an instant mini solar system or whatever.</li>
                     </ul>
 
                     <h3>3. Supernovas & Collisions</h3>
-                    <p>The shockwave ring pushes any planet it sweeps through. Two planets colliding in 3D space — or hitting a star surface — produce a fireball explosion. This can happen in real life btw, and we all finna die. This wasn't that easy to do so be easy on me. I'm not a programmer, it lowkey sucks to be one; No offense.</p>
+                    <p>The shockwave ring pushes any planet it sweeps through. Two planets colliding in 3D space or hitting a star surface which produces a fireball explosion. This can happen in real life btw, and we all finna die. This wasn't that easy to do so be easy on me. I'm not a programmer, it lowkey sucks to be one; No offense.</p>
 
                     <h3 style={{ borderTop: '1px solid #333', paddingTop: '1rem' }}>The Main Physics Algorithm</h3>
                     <p>For those who are curious, here is the raw 3D integration loop powering the engine:</p>
